@@ -514,49 +514,29 @@ footer div{
 
 #toItems {
   display: grid;
+  grid-template-columns: repeat(auto-fill, 180px);
+  grid-auto-rows: 270px;
   justify-content: center;
   align-content: center;
-  grid-template-columns: repeat(auto-fill, 330px);
-  grid-auto-rows: 330px;
   gap: 3px 3px;
 }
 
 .toItem {
-  list-style: none;
-  width: 330px;
-  height: 330px;
   margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  border: 1px solid rgb(59, 27, 21);
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  list-style: none;
+  padding: 5px;
+  height: 250px;
+  width: 180px;
 }
 
 .toP {
-  width: 250px;
-  height: 20px;
-  text-align: center;
-  margin: 0 auto 3px;
-  color: black;
-  padding: 0;
+  font-size: 7px;
 }
 
 .toImage {
-  width: 230px;
-  height: 230px;
+  height: 170px;
+  width: 170px;
   vertical-align: bottom;
-  padding: 0;
-  border: 4px groove rgb(167, 148, 43);
+  text-align: center;
 }
 
 .toCount {

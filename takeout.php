@@ -33,19 +33,18 @@
           <form method="POST" action="order.php">
             <div id="toItems">
               <?php foreach($menus as $menu): ?>
-              <ul class="toItem">
-                <li class="toP" name="name"><?php echo $menu->getName() ?></li>
-                <li><img src="<?php echo $menu->getImage() ?>" class="toImage"></li>
-                <li class="toP">￥　<?php echo $menu->getPrice() ?> (税込)</li>
-                <li><input 
-                      type="number" 
-                      min="0" 
-                      value="0" 
-                      class="toCount" 
-                      name="<?php echo $menu->getName() ?>"
-                    >個
-                </li>
-              </ul>
+              <div class="toItem">
+                <p class="toP" name="name"><?php echo $menu->getName() ?></p>
+                <img src="<?php echo $menu->getImage() ?>" class="toImage">
+                <p class="toP">￥　<?php echo $menu->getPrice() ?> (税込)</p>
+                <input 
+                  type="number" 
+                  min="0" 
+                  value="0" 
+                  class="toCount" 
+                  name="<?php echo $menu->getName() ?>"
+                >個                
+              </div>
               <?php endforeach ?>
             </div>
             <!-- <div id="totalPrice"></div> -->
